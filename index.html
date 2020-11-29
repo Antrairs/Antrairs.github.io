@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dmzj</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+</body>
+<script>
+    axios.get("https://www.baidu.com", {
+        headers: {
+            'Access-Control-Allow-Origin' : '*',
+        }
+    }).then(res => {
+        console.log(res.data)
+    })
+</script>
+</html>
